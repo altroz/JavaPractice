@@ -11,10 +11,10 @@ public class CalendarTesting {
 		
 		Calendar c = Calendar.getInstance();
 		c.setTime(d1);
-		
+		c.roll(Calendar.MONTH, 11);
 		Date d2 = c.getTime();
-		d2.setTime(d1.getTime()+3600000);
-		System.out.println("new time: "+ d2.toString());
+		System.out.println("New Time and Date is: "+ d2.toString());
+	
 		
 	}
 }
