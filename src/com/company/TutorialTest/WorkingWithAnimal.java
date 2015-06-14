@@ -1,6 +1,8 @@
 package com.company.TutorialTest;
 
 public class WorkingWithAnimal {
+	int justANum = 10;
+	
 	public static void main(String[]args){
 		
 		Dog fido = new Dog();
@@ -31,6 +33,19 @@ public class WorkingWithAnimal {
 		System.out.println("Kitty says:	"+ animals[1].getSound());
 		
 		speakAnimal(doggy);
+		((Dog)doggy).digHole();
+		
+		//System.out.println(justANum); 
+		//@ Cannot be used due to variable not being static. 
+		
+		//sayHell();
+		//@ Cannot be used due to method not being static. 
+		
+		//fido.bePrivate();
+		fido.accessPrivate();
+		// Cannot use a private method or variable even if defined
+		// under a subclass. 
+		
 	}
 	
 	public static void changeObjectName(Dog fido){
@@ -39,5 +54,9 @@ public class WorkingWithAnimal {
 	
 	public static void speakAnimal(Animal randAnimal){
 		System.out.println("Animal says:	"+ randAnimal.getSound());
+	}
+	
+	public void sayHello(){
+		System.out.println("Hello");
 	}
 }
