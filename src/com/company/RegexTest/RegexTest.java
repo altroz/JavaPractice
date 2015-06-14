@@ -4,7 +4,7 @@ import java.util.regex.*;
 
 public class RegexTest {
 	public static void main(String[]args){
-		Pattern p = Pattern.compile(".*xx");
+		Pattern p = Pattern.compile(".*?xx");
 		Matcher m = p.matcher("yyxxxyxx");
 		
 		while(m.find()){
