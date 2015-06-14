@@ -10,5 +10,8 @@ public class StringTest {
 		String b = new String("abc");
 	//3
 		String c = "abc";
+
+	a=a.concat("efg");
+	System.out.println(a);
 	}
 }
