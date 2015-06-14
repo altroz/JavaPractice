@@ -46,6 +46,10 @@ public class WorkingWithAnimal {
 		// Cannot use a private method or variable even if defined
 		// under a subclass. 
 		
+		Giraffe giraffe = new Giraffe();
+		giraffe.setName("Frank");
+		System.out.println(giraffe.getName());
+		
 	}
 	
 	public static void changeObjectName(Dog fido){
