@@ -11,4 +11,12 @@ public class Dog extends Animal{
 	public void changeVar(int randNum){
 		randNum =12;
 	System.out.println("randNum in Method: "+ randNum);}
+	
+	private void bePrivate(){
+		System.out.println("In a private Method");
+	}
+	
+	public void accessPrivate(){
+		bePrivate();
+	}
 }

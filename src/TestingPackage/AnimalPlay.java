@@ -39,7 +39,7 @@ public class AnimalPlay {
 		System.out.println("Doggy says: "+ animals[0].getSound());
 		System.out.println("Kitty says: "+ animals[1].getSound());
 		
-		
+		fido.accessPrivate();
 		
 	}
 	public static void changeObjectName(Dog fido){fido.setName("Marcus");}
