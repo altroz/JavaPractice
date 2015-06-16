@@ -10,6 +10,8 @@ public class ExampleOuterClass {
 	class ExampleInnerClass{
 		public void accessOuter(){
 			System.out.println("Outer x is: "+ x);
+			System.out.println("Inner ref is: "+ this);
+			System.out.println("Outer ref is: "+ ExampleOuterClass.this);
 		}
 	}
 }
