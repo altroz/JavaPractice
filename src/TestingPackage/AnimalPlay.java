@@ -20,5 +20,10 @@ public class AnimalPlay {
 		
 		((Dog)doggy).digHole();
 		
+		Giraffe giraffe = new Giraffe();
+		giraffe.setName("Frank");
+		giraffe.setWeight(5000);
+		giraffe.setSound("Honk Honk");
+		System.out.println(giraffe.getName()+ " "+ giraffe.getWeight()+ " "+ giraffe.getSound());
 	}
 }
