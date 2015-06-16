@@ -25,5 +25,23 @@ public class AnimalPlay {
 		giraffe.setWeight(5000);
 		giraffe.setSound("Honk Honk");
 		System.out.println(giraffe.getName()+ " "+ giraffe.getWeight()+ " "+ giraffe.getSound());
+		
+		changeObjectName(fido);
+		System.out.println("After changeObjectName method:  "+ fido.getName());
+		
+		int randNum = 10;
+		fido.changeVar(randNum);
+		System.out.println("Random Number after method call: "+ randNum);
+		
+		Animal[] animals = new Animal[2];
+		animals[0] = doggy;
+		animals[1] = kitty;
+		System.out.println("Doggy says: "+ animals[0].getSound());
+		System.out.println("Kitty says: "+ animals[1].getSound());
+		
+		
+		
 	}
+	public static void changeObjectName(Dog fido){fido.setName("Marcus");}
+	
 }
