@@ -1,5 +1,7 @@
 package SortingCollection;
 
+import java.util.*;
+
 public class MovieDVDInfo {
 	String movieName;
 	String movieType;
@@ -14,4 +16,8 @@ public class MovieDVDInfo {
 	public String toString(){
 		return movieName+ " "+ movieType+ " "+Hero+ "\n";
 	}
+	
+	ArrayList dvdList = new ArrayList();
+	System.out.println(dvdList);
+	Collections.sort(dvdList);
 }
