@@ -1,10 +1,15 @@
 package InnerClassTest;
 
-public class ExampleOuterClass {
+class ExampleOuterClass{
 	private int x = 7;
+	public void instantiateInnerClass(){
+		ExampleInnerClass in = new ExampleInnerClass();
+		in.accessOuter();
+	}
+	
 	class ExampleInnerClass{
-		public void accessOut(){
-			System.out.println("Outer x is "+ x);
+		public void accessOuter(){
+			System.out.println("Outer x is : "+ x);
 		}
 	}
 }
